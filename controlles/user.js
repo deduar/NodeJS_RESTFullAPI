@@ -38,6 +38,7 @@ function signUp(req, res, nex) {
 }
 
 function login(req, res, next) {
+    console.log(process.env.JWT_KEY);
     models.User.findOne({ where: { email: req.body.email } }).then(user => {
         if (user === null) {
             res.status(401).json({
@@ -49,7 +50,7 @@ function login(req, res, next) {
                     const token = jwt.sign({
                         email: user.email,
                         userId: user.id
-                    }, 'secret', function(err, token){
+                    }, process.env.JWT_KEY, function(err, token){
                         res.status(200).json({
                             message: "Authentication successful",
                             token: token

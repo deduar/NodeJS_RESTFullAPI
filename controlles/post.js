@@ -45,7 +45,7 @@ function save(req,res,nex){
     const schema = {
         title: {type:"string", optional: false, max: "100"},
         content: {type: "string", optional: false, max: "100"},
-        category: {type: "number", optional: false}
+        categoryId  : {type: "number", optional: false}
     }
     const v = new Validator();
     const validationResponse = v.validate(post, schema);
