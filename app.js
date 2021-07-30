@@ -17,6 +17,7 @@ app.use(express.json());
 // Routes
 app.use('/',require('./routes/main'));
 app.use('/posts',require('./routes/posts'));
+app.use('/users',require('./routes/users'));
 
 //404 handler
 app.use((req,res,next) => {

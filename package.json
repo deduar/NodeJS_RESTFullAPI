@@ -9,9 +9,11 @@
   "author": "OPTC",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "fastest-validator": "^1.11.1",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.12",
