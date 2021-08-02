@@ -7,7 +7,7 @@ function checkAuth(req,res,next){
         req.userData = decodedToke;
         next();
     } catch (e) {
-        return res.statu(401).json({
+        return res.status(401).json({
             'message': "Invalid or expired token provided!",
             'error': e
         });
