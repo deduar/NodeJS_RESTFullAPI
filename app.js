@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const app = express();
 
 // Setings
-app.set('port', 3000);
+app.set('port', 3001);
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
