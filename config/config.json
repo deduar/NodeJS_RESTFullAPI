@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
+    "username": "optc_api",
+    "password": "Nrhr12!1",
     "database": "optc_api",
     "host": "localhost",
     "dialect": "mysql"
